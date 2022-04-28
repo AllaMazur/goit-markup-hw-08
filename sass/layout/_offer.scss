@@ -1,0 +1,35 @@
+.offer-section {
+    padding: 0 0 94px;
+  }
+  .offers-list {
+    display: flex;
+  }
+  .offers-list__img {
+    position: relative;
+
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .section__item {
+    color: var(--primary-text-color);
+  }
+  .offers-list__description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .offers-list__description-overlay {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    height: 70px;
+    width: 100%;
+    bottom: 0px;
+    @include position ();
+    justify-content: center;
+  }

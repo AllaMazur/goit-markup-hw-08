@@ -1,0 +1,26 @@
+.clients-list {
+ @include position();
+    justify-content: center;
+  }
+  .clients-list__link {
+    @include position();
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    color: var(--accent-color);
+    border-color: var(--icons-color);
+    fill: var(--icons-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+ 
+    &:hover,
+    &:focus {
+    border-color: currentColor;
+    cursor: pointer;
+    fill: currentColor;
+    }
+  }
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
+  }

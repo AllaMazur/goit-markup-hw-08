@@ -1,0 +1,42 @@
+.benefit {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+  .principle {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
+  .list-advantage {
+    display: flex;
+  }
+  .advantages {
+    display: flex;
+    padding-bottom: 94px 0px;
+  }
+  .advantages__item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .advantages__element {
+   @include position();
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--team-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+ 
