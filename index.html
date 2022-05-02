@@ -72,10 +72,10 @@
           </button>
           <ul class="mobile-menu__navigation list">
             <li class="mobile-menu__navigation-item">
-              <a href="" class="mobile-menu__navigation-link link">Студия</a>
+              <a href="./index.html" class="mobile-menu__navigation-link link">Студия</a>
             </li>
             <li class="mobile-menu__navigation-item">
-              <a href="" class="mobile-menu__navigation-link link">Портфолио</a>
+              <a href="./portfolio.html" class="mobile-menu__navigation-link link">Портфолио</a>
             </li>
             <li class="mobile-menu__navigation-item">
               <a href="" class="mobile-menu__navigation-link link">Контакты</a>
@@ -119,8 +119,8 @@
         </div>
       </section> -->
       <!-- Advantages section -->
-      <!-- <section class="section">
-        <div class="container">
+      <section class="section container advantage-section">
+        <div class="advantage-container">
           <ul class="advantages list">
             <li class="advantages__item">
               <div class="advantages__element">
@@ -168,7 +168,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Offer section -->
       <!-- <section class="offer-section section">
         <div class="container">
@@ -200,18 +200,35 @@
           </ul>
         </div>
       </section> -->
-      <!-- <section class="team-section section"> 
-        <div class="container">
+      <section class="team-section section container">
+        <div class="">
           <h2 class="section-item heading">Наша команда</h2>
           <ul class="list team-section__list">
             <li class="team-section__member">
-              <img
-                class="team-section__photo"
-                src="./images/demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/demyanenko.webp 1x, ./images/demyanenko@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/demyanenko.jpg 1x, ./images/demyanenko@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/demyanenko-tablet.jpg 1x, ./images/demyanenko-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/demyanenko-mobile.jpg 1x, ./images/demyanenko-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-section__photo"
+                  src="./images/demyanenko.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="team-member__card">
                 <h3 class="section-item team">Игорь Демьяненко</h3>
                 <p class="description-item position" lang="en">Product Designer</p>
@@ -248,13 +265,32 @@
               </div>
             </li>
             <li class="team-section__member">
-              <img
-                class="team-section__photo"
-                src="./images/repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/repina.webp 1x, ./images/repina@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/repina.jpg 1x, ./images/repina@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/repina-tablet.jpg 1x, ./images/repina-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/repina-mobile.jpg 1x, ./images/repina-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="team-section__photo"
+                  src="./images/repina.jpg"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team-member__card">
                 <h3 class="team-section_item team">Ольга Репина</h3>
                 <p class="description-item position" lang="en">Frontend Developer</p>
@@ -291,13 +327,22 @@
               </div>
             </li>
             <li class="team-section__member">
-              <img
-                class="team-section__photo"
-                src="./images/tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/tarasov.webp 1x, ./images/tarasov@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source
+                  srcset="./images/tarasov.jpg 1x, ./images/tarasov@2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/tarasov-tablet.jpg 1x, ./images/tarasov-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./images/tarasov-mobile.jpg 1x, ./images/tarasov-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" />
+                <img class="team-section__photo" src="./images/tarasov.jpg" alt="Николай Тарасов"
+              /></picture>
               <div class="team-member__card">
                 <h3 class="section-item team">Николай Тарасов</h3>
                 <p class="description-item position" lang="en">Marketing</p>
@@ -334,13 +379,26 @@
               </div>
             </li>
             <li class="team-section__member">
-              <img
-                class="team-section__photo"
-                src="./images/yermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/yermakov.webp 1x, ./images/yermakov@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/yermakov.jpg 1x, ./images/yermakov@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/yermakov-tablet.jpg 1x, ./images/yermakov-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/yermakov-mobile.jpg 1x, ./images/yermakov-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <img class="team-section__photo" src="./images/yermakov.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team-member__card">
                 <h3 class="section-item team">Михаил Ермаков</h3>
                 <p class="description-item position" lang="en">UI Designer</p>
@@ -378,63 +436,63 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Clients section -->
-      <!-- <section class="section"> 
-      <div class="container">
-        <h2 class="heading">Постоянные клиенты</h2>
-        <ul class="clients-list list">
-          <li class="clients-list__item">
-            <a href="" class="clients-list__link"
-              ><svg width="42" height="46">
-                <use href="./images/icons.svg#icon-yaco"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a href="" class="clients-list__link"
-              ><svg width="40" height="52">
-                <use href="./images/icons.svg#icon-tagline"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a href="" class="clients-list__link"
-              ><svg width="44" height="42">
-                <use href="./images/icons.svg#icon-company"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a href="" class="clients-list__link"
-              ><svg width="106" height="60">
-                <use href="./images/icons.svg#icon-foster"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a href="" class="clients-list__link"
-              ><svg width="62" height="46">
-                <use href="./images/icons.svg#icon-brand"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-list__item">
-            <a href="" class="clients-list__link"
-              ><svg width="94" height="44">
-                <use href="./images/icons.svg#icon-companytagline"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section> -->
+      <section class="section container clients-section">
+        <div class="">
+          <h2 class="heading clients__heading">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
+                ><svg width="42" height="46">
+                  <use href="./images/icons.svg#icon-yaco"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
+                ><svg width="40" height="52">
+                  <use href="./images/icons.svg#icon-tagline"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
+                ><svg width="44" height="42">
+                  <use href="./images/icons.svg#icon-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
+                ><svg width="106" height="60">
+                  <use href="./images/icons.svg#icon-foster"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
+                ><svg width="62" height="46">
+                  <use href="./images/icons.svg#icon-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
+                ><svg width="94" height="44">
+                  <use href="./images/icons.svg#icon-companytagline"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-container">
-        <div>
+        <div class="footer__main-contacts">
           <a class="logo-footer" href="./index.html"
             ><span class="logo__emphasis">Web</span>Studio</a
           >
@@ -442,7 +500,7 @@
             <ul class="footer-list list">
               <li class="footer-list__contact">
                 <a
-                  class="footer-list__adress"
+                  class="footer-list__adress contacts"
                   href="https://goo.gl/maps/RZzK3HeGXn62apEB7"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -450,19 +508,23 @@
                 >
               </li>
               <li class="footer-list__contact">
-                <a class="contacts footer-list__contact-item" href="mailto:info@example.com"
+                <a
+                  class="contacts footer-contact footer-list__contact-item"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li>
-                <a class="contacts footer-list__contact-item" href="tel:+380991111111"
+                <a
+                  class="contacts footer-contact footer-list__contact-item"
+                  href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-links">
+        <div>
           <p class="footer-links__appeal">Присоединяйтесь</p>
           <ul class="footer-links__list list">
             <li class="footer-links__item">
@@ -495,7 +557,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="email-subscription">
           <p class="footer-form__title">Подпишитесь на рассылку</p>
           <form class="footer-form">
             <input
@@ -512,8 +574,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="12" height="12">
@@ -563,7 +625,7 @@
           <button class="submit-form-btn" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <div class="jornal">
       <script src="./js/menu.js"></script>
