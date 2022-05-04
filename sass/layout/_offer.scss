@@ -1,16 +1,16 @@
 @media screen and (max-width: 1199px) {
-  .offer-section {
+  .offer {
     display: none;
   }
 }
 
-.offer-section {
+.offer {
     padding: 0 0 94px;
   }
   .offers-list {
     display: flex;
   }
-  .offers-list__img {
+  .offers-list__item {
     position: relative;
 
   &:not(:last-child) {
