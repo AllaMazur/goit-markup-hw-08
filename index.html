@@ -72,7 +72,7 @@
           </button>
           <ul class="mobile-menu__navigation list">
             <li class="mobile-menu__navigation-item">
-              <a href="./index.html" class="mobile-menu__navigation-link link">Студия</a>
+              <a href="./index.html" class="mobile-menu__navigation-link current link">Студия</a>
             </li>
             <li class="mobile-menu__navigation-item">
               <a href="./portfolio.html" class="mobile-menu__navigation-link link">Портфолио</a>
@@ -119,8 +119,8 @@
         </div>
       </section>
       <!-- Advantages section -->
-      <section class="section container advantage-section">
-        <div class="advantage-container">
+      <section class="section advantage-section">
+        <div class="advantage-container container">
           <ul class="advantages list">
             <li class="advantages__item">
               <div class="advantages__element">
@@ -175,24 +175,57 @@
           <h2 class="section-item heading">Чем мы занимаемся</h2>
           <ul class="offers-list list">
             <li class="offers-list__item">
-              <img src="./images/coding.jpg" alt="Написание кода" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/coding.webp 1x, ./images/coding@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/coding.jpg 1x, ./images/coding@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/coding.jpg" alt="Написание кода" width="370" height="294" />
+              </picture>
               <div class="offers-list__description-overlay">
                 <p class="offers-list__description">Десктопные приложения</p>
               </div>
             </li>
             <li class="offers-list__item">
-              <img
-                src="./images/adapting.jpg"
-                alt="Адаптация под мобильные устройства"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/adapting.webp 1x, ./images/adapting@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/adapting.jpg 1x, ./images/adapting@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/adapting.jpg"
+                  alt="Адаптация под мобильные устройства"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <div class="offers-list__description-overlay">
                 <p class="offers-list__description">Мобильные приложения</p>
               </div>
             </li>
             <li class="offers-list__item">
-              <img src="./images/styling.jpg" alt="Стилизирование" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/styling.webp 1x, ./images/styling@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/styling.jpg 1x, ./images/styling@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/styling.jpg" alt="Стилизирование" width="370" height="294" />
+              </picture>
               <div class="offers-list__description-overlay">
                 <p class="offers-list__description">Дизайнерские решения</p>
               </div>
@@ -200,8 +233,8 @@
           </ul>
         </div>
       </section>
-      <section class="team-section section container">
-        <div class="">
+      <section class="team-section section">
+        <div class="container">
           <h2 class="section-item heading">Наша команда</h2>
           <ul class="list team-section__list">
             <li class="team-section__member">
@@ -440,7 +473,7 @@
 
       <!-- Clients section -->
       <section class="section container clients-section">
-        <div class="">
+        <div class="container">
           <h2 class="heading clients__heading">Постоянные клиенты</h2>
           <ul class="clients-list list">
             <li class="clients-list__item">
