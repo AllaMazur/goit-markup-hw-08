@@ -1,23 +1,26 @@
 .hero {
   padding: 118px 0px;
-  max-width: 480px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   background-image: linear-gradient(to right, #2f303a66, #2f303a66),
-    url('../images/hero-mobile.jpg');
+    url('../images/hero.jpg');
   
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
+}
+@media screen and (min-width:320px) {
+  .hero {
+    min-width: 480px;
+    height: 400px;
+    padding: 118px 0;
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('../images/hero-mobile.jpg');
+    @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero {
     background-image: linear-gradient(to right, #2f303a66, #2f303a66), url('../images/hero-mobile@2x.jpg');
   }
-}
+  }
 }
 @media screen and (min-width:768px) {
   .hero {
