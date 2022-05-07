@@ -103,7 +103,9 @@
       margin-bottom: 15px;
     }
   .flex-portfolio-item {
-    width: 320px;
+    width: 100%;
+  }
+  .flex-portfolio-item:not(:last-child) {
     margin-bottom: 30px;
   }
     .flex-portfolio {
