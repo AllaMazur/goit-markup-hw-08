@@ -3,9 +3,10 @@
   background-color: var(--hero-footer-background-color);
   padding: 60px 0px;
   border: 1px solid #afb1b8;
+  min-width: 480px;
 }
 .footer-container {
-  box-sizing: content-box;
+  box-sizing: border-box;
   display: block;
   text-align: center;
 }
